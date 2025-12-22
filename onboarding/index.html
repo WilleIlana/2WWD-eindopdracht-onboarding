@@ -1,13 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>onboarding</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="https://use.typekit.net/cqm1piz.css">
+  <link rel="icon" type="image/x-icon" href="./public/Eventbrite_Symbol_2.webp">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+  <title>Eventbrite onboarding</title>
+</head>
+
+<body>
+  <div class="c-phone">
+    <div class="c-phone__inner">
+      <div id="app" class="c-phone__app">
+        <section class="c-onboarding c-onboarding--active" id="screen-1">
+          <header class="c-onboarding__top">
+            <button class="c-onboarding__back" aria-label="Back">
+              <i class="c-onboarding__chevron bi bi-chevron-left"></i> </button>
+          </header>
+          <div class="c-onboarding__illustration">
+            <lottie-player class="c-onboarding__lottie" id="lottie-1" src="./src/data/onboarding-1-search.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
+          <div class="c-onboarding__dots">
+            <span class="c-onboarding__dot c-onboarding__dot--active"></span>
+            <span class="c-onboarding__dot"></span>
+            <span class="c-onboarding__dot"></span>
+            <span class="c-onboarding__dot"></span>
+            <span class="c-onboarding__dot"></span>
+          </div>
+
+          <div class="c-onboarding__content">
+            <h1 class="c-onboarding__title">Find something fun to do</h1>
+            <p class="c-onboarding__text">
+              Discover concerts, festivals and meetups happening near you.
+            </p>
+          </div>
+
+          <div class="c-onboarding__actions">
+            <button class="c-onboarding__button c-onboarding__button--primary" data-next="2">
+              Continue
+            </button>
+            <button class="c-onboarding__button c-onboarding__button--secondary">
+              Skip
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,35 @@
+@use "core" as *;
+@use "bs-core" as *;
+
+.c-start {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-background;
+
+    &--active {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__background {
+        width: 30rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/blob.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &__eventbrite {
+        height: 3.5rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
